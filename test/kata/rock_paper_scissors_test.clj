@@ -1,5 +1,5 @@
 (ns kata.rock-paper-scissors-test
-  (:require [clojure.test :refer :al]l
+  (:require [clojure.test :refer :all]
             [kata.rock-paper-scissors :refer :all]))
 
 (deftest sissors-test
