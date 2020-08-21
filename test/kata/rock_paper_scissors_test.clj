@@ -2,13 +2,13 @@
   (:require [clojure.test :refer :all]
             [kata.rock-paper-scissors :refer :all]))
 
-(deftest sissors-test
+(deftest scissors-test
   (testing "Winner"
-    (is (= :sissors (winner :scissors :paper)))
-    (is (= :sissors (winner :paper :scissors)))))
+    (is (= :scissors (winner :scissors :paper)))
+    (is (= :scissors (winner :paper :scissors)))))
 
-;; (deftest rock-test
-;;   (testing "Winner"
-;;     (is (= :rock (winner :rock :sissors)))
-;;     (is (= :rock (winner :scissors :rock)))))
+(deftest rock-test
+  (testing "Winner"
+    (is (= :rock (winner :rock :scissors)))
+    (is (= :rock (winner :scissors :rock)))))
 
