@@ -12,3 +12,8 @@
     (is (= :rock (winner :rock :scissors)))
     (is (= :rock (winner :scissors :rock)))))
 
+(deftest paper-test
+  (testing "Winner"
+    (is (= :scissors (winner :paper :scissors)))
+    (is (= :rock (winner :paper :rock)))))
+
